@@ -96,10 +96,9 @@ def main():
     commited = False
     added_filenames = []
     commits = []
+    commit_history = currentBranch + '/commit.txt'
     external_repo = './external/main'
     currentBranch = external_repo
-
-    commit_history = currentBranch + '/commit.txt'
     workingDir = './'
 
     if not os.path.exists(external_repo):
